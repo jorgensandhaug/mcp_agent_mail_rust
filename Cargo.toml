@@ -32,14 +32,14 @@ fastmcp-protocol = { git = "https://github.com/jorgensandhaug/fastmcp_rust.git",
 
 asupersync = { git = "https://github.com/Dicklesworthstone/asupersync.git", rev = "f388be666a8b1aab04b9dfecec4ca962fa378d1d", features = ["tls-webpki-roots"] }
 
-sqlmodel = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
-sqlmodel-core = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
-sqlmodel-query = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
-sqlmodel-schema = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
-sqlmodel-session = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
-sqlmodel-pool = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
-sqlmodel-sqlite = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
-sqlmodel-frankensqlite = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
+sqlmodel = { git = "https://github.com/jorgensandhaug/sqlmodel_rust.git", branch = "fix-submodules" }
+sqlmodel-core = { git = "https://github.com/jorgensandhaug/sqlmodel_rust.git", branch = "fix-submodules" }
+sqlmodel-query = { git = "https://github.com/jorgensandhaug/sqlmodel_rust.git", branch = "fix-submodules" }
+sqlmodel-schema = { git = "https://github.com/jorgensandhaug/sqlmodel_rust.git", branch = "fix-submodules" }
+sqlmodel-session = { git = "https://github.com/jorgensandhaug/sqlmodel_rust.git", branch = "fix-submodules" }
+sqlmodel-pool = { git = "https://github.com/jorgensandhaug/sqlmodel_rust.git", branch = "fix-submodules" }
+sqlmodel-sqlite = { git = "https://github.com/jorgensandhaug/sqlmodel_rust.git", branch = "fix-submodules" }
+sqlmodel-frankensqlite = { git = "https://github.com/jorgensandhaug/sqlmodel_rust.git", branch = "fix-submodules" }
 
 ftui = { git = "https://github.com/Dicklesworthstone/frankentui.git", rev = "507542bea6d84bf1d83c438a2168a0194a7e5264", features = ["crossterm"] }
 ftui-runtime = { git = "https://github.com/Dicklesworthstone/frankentui.git", rev = "507542bea6d84bf1d83c438a2168a0194a7e5264", features = ["crossterm-compat"] }
