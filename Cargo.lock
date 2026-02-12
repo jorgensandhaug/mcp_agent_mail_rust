@@ -307,6 +307,34 @@ dependencies = [
 ]
 
 [[package]]
+name = "asupersync"
+version = "0.1.1"
+source = "git+https://github.com/Dicklesworthstone/asupersync.git?rev=f388be666a8b1aab04b9dfecec4ca962fa378d1d#f388be666a8b1aab04b9dfecec4ca962fa378d1d"
+dependencies = [
+ "base64 0.22.1",
+ "bincode",
+ "crossbeam-queue",
+ "getrandom 0.3.4",
+ "libc",
+ "nix 0.29.0",
+ "parking_lot",
+ "pin-project",
+ "polling",
+ "rmp-serde",
+ "serde",
+ "serde_json",
+ "sha1",
+ "slab",
+ "smallvec",
+ "socket2",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tracing",
+ "tracing-subscriber",
+ "visibility",
+]
+
+[[package]]
 name = "async-trait"
 version = "0.1.89"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1814,7 +1842,7 @@ dependencies = [
 name = "fastmcp-client"
 version = "0.1.0"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1 (git+https://github.com/Dicklesworthstone/asupersync.git?rev=f388be666a8b1aab04b9dfecec4ca962fa378d1d)",
  "dirs",
  "fastmcp-core",
  "fastmcp-protocol",
@@ -1846,7 +1874,7 @@ dependencies = [
 name = "fastmcp-core"
 version = "0.1.0"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1 (git+https://github.com/Dicklesworthstone/asupersync.git?rev=f388be666a8b1aab04b9dfecec4ca962fa378d1d)",
  "log",
  "serde",
  "serde_json",
@@ -1876,7 +1904,7 @@ dependencies = [
 name = "fastmcp-rust"
 version = "0.1.0"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1 (git+https://github.com/Dicklesworthstone/asupersync.git?rev=f388be666a8b1aab04b9dfecec4ca962fa378d1d)",
  "fastmcp-client",
  "fastmcp-core",
  "fastmcp-derive",
@@ -1891,7 +1919,7 @@ dependencies = [
 name = "fastmcp-server"
 version = "0.1.0"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1 (git+https://github.com/Dicklesworthstone/asupersync.git?rev=f388be666a8b1aab04b9dfecec4ca962fa378d1d)",
  "base64 0.22.1",
  "chrono",
  "fastmcp-client",
@@ -1911,7 +1939,7 @@ dependencies = [
 name = "fastmcp-transport"
 version = "0.1.0"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1 (git+https://github.com/Dicklesworthstone/asupersync.git?rev=f388be666a8b1aab04b9dfecec4ca962fa378d1d)",
  "fastmcp-core",
  "fastmcp-protocol",
  "getrandom 0.3.4",
@@ -2088,6 +2116,7 @@ dependencies = [
 [[package]]
 name = "fsqlite"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "fsqlite-core",
  "fsqlite-error",
@@ -2101,6 +2130,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-ast"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "fsqlite-types",
 ]
@@ -2108,6 +2138,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-btree"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "fsqlite-error",
  "fsqlite-pager",
@@ -2118,6 +2149,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-core"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "blake3",
  "fsqlite-ast",
@@ -2140,6 +2172,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-error"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "thiserror 2.0.18",
 ]
@@ -2147,6 +2180,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-ext-fts5"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "fsqlite-error",
  "fsqlite-func",
@@ -2157,6 +2191,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-ext-json"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "fsqlite-error",
  "fsqlite-func",
@@ -2168,6 +2203,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-ext-rtree"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "fsqlite-error",
  "fsqlite-types",
@@ -2176,6 +2212,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-func"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "fsqlite-error",
  "fsqlite-types",
@@ -2185,6 +2222,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-mvcc"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "blake3",
  "fsqlite-error",
@@ -2202,6 +2240,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-pager"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "argon2",
  "chacha20poly1305",
@@ -2215,6 +2254,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-parser"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "fsqlite-ast",
  "fsqlite-error",
@@ -2225,6 +2265,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-planner"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "fsqlite-ast",
  "fsqlite-error",
@@ -2235,6 +2276,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-types"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "bitflags 2.10.0",
  "blake3",
@@ -2247,6 +2289,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-vdbe"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "fsqlite-ast",
  "fsqlite-btree",
@@ -2262,6 +2305,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-vfs"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "advisory-lock",
  "fsqlite-error",
@@ -2274,6 +2318,7 @@ dependencies = [
 [[package]]
 name = "fsqlite-wal"
 version = "0.1.0"
+source = "git+https://github.com/Dicklesworthstone/frankensqlite.git?rev=5430c844409f881f075f40d2a6fd45e0c06c2eb7#5430c844409f881f075f40d2a6fd45e0c06c2eb7"
 dependencies = [
  "blake3",
  "crc32c",
@@ -4569,7 +4614,7 @@ dependencies = [
 name = "mcp-agent-mail-cli"
 version = "0.1.0"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "beads_rust",
  "chrono",
  "clap",
@@ -4601,7 +4646,7 @@ dependencies = [
 name = "mcp-agent-mail-conformance"
 version = "0.1.0"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "clap",
  "fastmcp-core",
  "fastmcp-rust",
@@ -4643,7 +4688,7 @@ dependencies = [
 name = "mcp-agent-mail-db"
 version = "0.1.0"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "chrono",
  "indexmap",
  "loom",
@@ -4699,7 +4744,7 @@ name = "mcp-agent-mail-server"
 version = "0.1.0"
 dependencies = [
  "ammonia",
- "asupersync",
+ "asupersync 0.1.1",
  "base64 0.22.1",
  "chrono",
  "comrak",
@@ -4757,7 +4802,7 @@ dependencies = [
 name = "mcp-agent-mail-storage"
 version = "0.1.0"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "base64 0.22.1",
  "chrono",
  "fs2",
@@ -4780,7 +4825,7 @@ dependencies = [
 name = "mcp-agent-mail-tools"
 version = "0.1.0"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "chrono",
  "fastmcp-core",
  "fastmcp-protocol",
@@ -6234,6 +6279,7 @@ dependencies = [
 [[package]]
 name = "rich_rust"
 version = "0.1.1"
+source = "git+https://github.com/Dicklesworthstone/rich_rust.git?rev=f003f0cb12dfe0458f37f921ba61837ffc9dd5ae#f003f0cb12dfe0458f37f921ba61837ffc9dd5ae"
 dependencies = [
  "bitflags 2.10.0",
  "crossterm 0.29.0",
@@ -6997,7 +7043,7 @@ dependencies = [
 name = "sqlmodel"
 version = "0.1.1"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "serde",
  "serde_json",
  "sqlmodel-core",
@@ -7012,7 +7058,7 @@ dependencies = [
 name = "sqlmodel-core"
 version = "0.1.1"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "regex",
  "serde",
  "serde_json",
@@ -7023,7 +7069,7 @@ dependencies = [
 name = "sqlmodel-frankensqlite"
 version = "0.1.1"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "fsqlite",
  "fsqlite-core",
  "fsqlite-error",
@@ -7047,7 +7093,7 @@ dependencies = [
 name = "sqlmodel-pool"
 version = "0.1.1"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "sqlmodel-core",
  "tracing",
 ]
@@ -7056,7 +7102,7 @@ dependencies = [
 name = "sqlmodel-query"
 version = "0.1.1"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "serde",
  "sqlmodel-core",
  "tracing",
@@ -7066,7 +7112,7 @@ dependencies = [
 name = "sqlmodel-schema"
 version = "0.1.1"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "serde",
  "sqlmodel-core",
  "sqlmodel-macros",
@@ -7077,7 +7123,7 @@ dependencies = [
 name = "sqlmodel-session"
 version = "0.1.1"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "serde",
  "serde_json",
  "sqlmodel-core",
@@ -7089,7 +7135,7 @@ dependencies = [
 name = "sqlmodel-sqlite"
 version = "0.1.1"
 dependencies = [
- "asupersync",
+ "asupersync 0.1.1",
  "serde",
  "serde_json",
  "sqlmodel-core",
