@@ -23,35 +23,35 @@ repository = "https://github.com/Dicklesworthstone/mcp_agent_mail_rust"
 authors = ["Jeff Emanuel"]
 
 [workspace.dependencies]
-# Required internal dependencies (local projects)
-fastmcp = { path = "../fastmcp_rust/crates/fastmcp", package = "fastmcp-rust" }
-fastmcp-core = { path = "../fastmcp_rust/crates/fastmcp-core" }
-fastmcp-server = { path = "../fastmcp_rust/crates/fastmcp-server" }
-fastmcp-transport = { path = "../fastmcp_rust/crates/fastmcp-transport" }
-fastmcp-protocol = { path = "../fastmcp_rust/crates/fastmcp-protocol" }
+# Required internal dependencies (git-pinned for standalone builds)
+fastmcp = { git = "https://github.com/jorgensandhaug/fastmcp_rust.git", branch = "git-deps", package = "fastmcp-rust" }
+fastmcp-core = { git = "https://github.com/jorgensandhaug/fastmcp_rust.git", branch = "git-deps" }
+fastmcp-server = { git = "https://github.com/jorgensandhaug/fastmcp_rust.git", branch = "git-deps" }
+fastmcp-transport = { git = "https://github.com/jorgensandhaug/fastmcp_rust.git", branch = "git-deps" }
+fastmcp-protocol = { git = "https://github.com/jorgensandhaug/fastmcp_rust.git", branch = "git-deps" }
 
-asupersync = { path = "../asupersync", features = ["tls-webpki-roots"] }
+asupersync = { git = "https://github.com/Dicklesworthstone/asupersync.git", rev = "f388be666a8b1aab04b9dfecec4ca962fa378d1d", features = ["tls-webpki-roots"] }
 
-sqlmodel = { path = "../sqlmodel_rust/crates/sqlmodel" }
-sqlmodel-core = { path = "../sqlmodel_rust/crates/sqlmodel-core" }
-sqlmodel-query = { path = "../sqlmodel_rust/crates/sqlmodel-query" }
-sqlmodel-schema = { path = "../sqlmodel_rust/crates/sqlmodel-schema" }
-sqlmodel-session = { path = "../sqlmodel_rust/crates/sqlmodel-session" }
-sqlmodel-pool = { path = "../sqlmodel_rust/crates/sqlmodel-pool" }
-sqlmodel-sqlite = { path = "../sqlmodel_rust/crates/sqlmodel-sqlite" }
-sqlmodel-frankensqlite = { path = "../sqlmodel_rust/crates/sqlmodel-frankensqlite" }
+sqlmodel = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
+sqlmodel-core = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
+sqlmodel-query = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
+sqlmodel-schema = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
+sqlmodel-session = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
+sqlmodel-pool = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
+sqlmodel-sqlite = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
+sqlmodel-frankensqlite = { git = "https://github.com/Dicklesworthstone/sqlmodel_rust.git", rev = "26df685665367707cb8b1e4ed3a808f9d50f0401" }
 
-ftui = { path = "../frankentui/crates/ftui", features = ["crossterm"] }
-ftui-runtime = { path = "../frankentui/crates/ftui-runtime", features = ["crossterm-compat"] }
-ftui-extras = { path = "../frankentui/crates/ftui-extras", features = ["theme", "syntax", "export", "markdown", "charts"] }
-ftui-widgets = { path = "../frankentui/crates/ftui-widgets" }
-ftui-harness = { path = "../frankentui/crates/ftui-harness" }
-ftui-render = { path = "../frankentui/crates/ftui-render" }
-beads_rust = { path = "../beads_rust" }
-toon = { path = "../toon_rust" }
+ftui = { git = "https://github.com/Dicklesworthstone/frankentui.git", rev = "507542bea6d84bf1d83c438a2168a0194a7e5264", features = ["crossterm"] }
+ftui-runtime = { git = "https://github.com/Dicklesworthstone/frankentui.git", rev = "507542bea6d84bf1d83c438a2168a0194a7e5264", features = ["crossterm-compat"] }
+ftui-extras = { git = "https://github.com/Dicklesworthstone/frankentui.git", rev = "507542bea6d84bf1d83c438a2168a0194a7e5264", features = ["theme", "syntax", "export", "markdown", "charts"] }
+ftui-widgets = { git = "https://github.com/Dicklesworthstone/frankentui.git", rev = "507542bea6d84bf1d83c438a2168a0194a7e5264" }
+ftui-harness = { git = "https://github.com/Dicklesworthstone/frankentui.git", rev = "507542bea6d84bf1d83c438a2168a0194a7e5264" }
+ftui-render = { git = "https://github.com/Dicklesworthstone/frankentui.git", rev = "507542bea6d84bf1d83c438a2168a0194a7e5264" }
+beads_rust = { git = "https://github.com/Dicklesworthstone/beads_rust.git", rev = "79e26c9afe6db16bf4f87ab72577c0b3ef333466" }
+toon = { git = "https://github.com/Dicklesworthstone/toon_rust.git", rev = "032ff3cb8e5f8d3489c134edf99959543304210d" }
 
 # Agent detection (tokio-based upstream; declare optional in crates that use it)
-coding-agent-search = { path = "../coding_agent_session_search" }
+coding-agent-search = { git = "https://github.com/Dicklesworthstone/coding_agent_session_search.git", rev = "44e69598ef64c5e4ffeab30f2425c874ac0feb83" }
 
 # Internal workspace crates
 mcp-agent-mail-core = { path = "crates/mcp-agent-mail-core" }
@@ -127,4 +127,4 @@ inherits = "release"     # Benchmarks use same optimizations as release
 [patch.crates-io]
 # Force a single asupersync throughout the dependency graph to avoid
 # type-identity mismatches (Cx/Outcome/etc).
-asupersync = { path = "../asupersync" }
+asupersync = { git = "https://github.com/Dicklesworthstone/asupersync.git", rev = "f388be666a8b1aab04b9dfecec4ca962fa378d1d" }
